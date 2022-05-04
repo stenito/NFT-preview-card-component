@@ -1,0 +1,206 @@
+:root {
+  --color-very-dark-blue-main: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-hover-trans: rgba(0, 255, 247, 0.5);
+  --color-hover: rgb(0, 255, 247);
+  --color-white: hsl(0, 0%, 100%);
+  --color: hsl(215, 42%, 65%);
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-feature-settings: "kern";
+          font-feature-settings: "kern";
+  font-synthesis: none;
+  height: 100%;
+  min-height: 100%;
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  text-rendering: geometricPrecision;
+  color: var(--color);
+  font-size: 18px;
+}
+
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  -webkit-tap-highlight-color: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--color-very-dark-blue-main);
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  padding: 24px;
+}
+.container .card {
+  background-color: var(--color-very-dark-blue-card);
+  border-radius: 15px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  color: var(--color-dark-blue);
+  padding: 24px;
+  max-width: 350px;
+}
+.container .card a,
+.container .card a:link,
+.container .card a:visited {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.container .card a:hover,
+.container .card a:link:hover,
+.container .card a:visited:hover {
+  color: var(--color-hover);
+}
+.container .card .nft {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 302px;
+  height: 302px;
+  display: block;
+}
+.container .card .nft-img {
+  width: 302px;
+  height: 302px;
+  z-index: 0;
+}
+.container .card .nft .overlay {
+  background-color: var(--color-hover-trans);
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .nft:hover .overlay {
+  display: flex;
+}
+.container .card h1 {
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-margin-before: 23px;
+          margin-block-start: 23px;
+}
+.container .card p {
+  font-weight: 400;
+  -webkit-margin-before: 14px;
+          margin-block-start: 14px;
+  -webkit-margin-after: 14px;
+          margin-block-end: 14px;
+  line-height: 1.4;
+}
+.container .card .info {
+  display: flex;
+  justify-content: space-between;
+  -webkit-margin-after: 19px;
+          margin-block-end: 19px;
+}
+.container .card .info .price,
+.container .card .info .duration {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  letter-spacing: -0.5px;
+}
+.container .card .info .price svg,
+.container .card .info .duration svg {
+  -webkit-margin-end: 6.5px;
+          margin-inline-end: 6.5px;
+  -webkit-margin-after: -3px;
+          margin-block-end: -3px;
+}
+.container .card .info .price {
+  color: var(--color-hover);
+}
+.container .card .about {
+  -webkit-padding-before: 14px;
+          padding-block-start: 14px;
+  -webkit-margin-after: 9.852px;
+          margin-block-end: 9.852px;
+  display: flex;
+  border-top: 1px solid var(--color-very-dark-blue-line);
+  align-items: center;
+}
+.container .card .about .avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  -webkit-margin-end: 16px;
+          margin-inline-end: 16px;
+  background: var(--color-hover) url("./images/image-avatar.png") no-repeat center;
+  background-size: cover;
+}
+.container .card .about .by {
+  font-size: 18px;
+  letter-spacing: -0.75px;
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 17px;
+  }
+
+  .container .card {
+    width: 327px;
+  }
+  .container .card .nft {
+    width: 278px;
+    height: 278px;
+  }
+  .container .card .nft-img {
+    width: 278px;
+    height: 278px;
+  }
+  .container .card h1 {
+    -webkit-margin-before: 21px;
+            margin-block-start: 21px;
+    -webkit-margin-after: 15px;
+            margin-block-end: 15px;
+    letter-spacing: -0.1px;
+  }
+  .container .card p {
+    -webkit-margin-after: 9px;
+            margin-block-end: 9px;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+  }
+  .container .card .info {
+    -webkit-margin-after: 7px;
+            margin-block-end: 7px;
+  }
+  .container .card .info .price {
+    letter-spacing: -1.01px;
+  }
+  .container .card .about {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-padding-before: 15px;
+            padding-block-start: 15px;
+  }
+  .container .card .about .by {
+    letter-spacing: -1.2px;
+  }
+}
