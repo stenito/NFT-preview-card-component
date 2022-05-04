@@ -44,15 +44,15 @@
 <h3 id="screenshot">Screenshot</h3>
 
 <figure>
-<img src="./screenshots/screenshot.jpg" alt="" />
-<figcaption></figcaption>
+<img src=".dist/screenshots/screenshots.png" alt="Screenshots" />
+<figcaption>Screenshots</figcaption>
 </figure>
 
 <h3 id="links">Links</h3>
 
 <ul>
 <li>Solution URL: <a href="https://github.com/stenito/NFT-preview-car--component">https://github.com/stenito/NFT-preview-car&#8211;component</a></li>
-<li>Live Site URL: <a href="https://your-live-site-url.com">Add live site URL here</a></li>
+<li>Live Site URL: <a href="https://stenito-nft-preview-card-component.netlify.app/">https://stenito-nft-preview-card-component.netlify.app/</a></li>
 </ul>
 
 <h2 id="myprocess">My process</h2>

@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot.jpg)
+![Screenshots](./dist/screenshots/screenshots.png)
 
 ### Links
 
 - Solution URL: [https://github.com/stenito/NFT-preview-car--component](https://github.com/stenito/NFT-preview-car--component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://stenito-nft-preview-card-component.netlify.app/](https://stenito-nft-preview-card-component.netlify.app/)
 
 ## My process
 
