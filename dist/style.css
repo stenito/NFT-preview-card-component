@@ -116,20 +116,18 @@ body {
   justify-content: space-between;
   -webkit-margin-after: 19px;
           margin-block-end: 19px;
+  font-size: 17px;
 }
 .container .card .info .price,
 .container .card .info .duration {
   display: flex;
   align-items: center;
   height: 2rem;
-  letter-spacing: -0.5px;
 }
 .container .card .info .price svg,
 .container .card .info .duration svg {
   -webkit-margin-end: 6.5px;
           margin-inline-end: 6.5px;
-  -webkit-margin-after: -3px;
-          margin-block-end: -3px;
 }
 .container .card .info .price {
   color: var(--color-hover);
