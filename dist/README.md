@@ -44,7 +44,7 @@
 <h3 id="screenshot">Screenshot</h3>
 
 <figure>
-<img src=".dist/screenshots/screenshots.png" alt="Screenshots" />
+<img src="./dist/screenshots/screenshots.png" alt="Screenshots" />
 <figcaption>Screenshots</figcaption>
 </figure>
 
